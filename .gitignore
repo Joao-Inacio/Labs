@@ -1,0 +1,10 @@
+__pycache__/
+.ipynb_checkpoints/
+.virtual/
+virtual/
+env/
+venv/
+mlep26/
+*.log
+*.zip
+teste.py

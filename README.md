@@ -6,7 +6,7 @@ Este repositório do Github é dedicado a documentar e compartilhar os meus proj
 
 Cada projeto possui sua própria pasta no repositório, onde você encontrará o código-fonte completo, arquivos de dados, resultados e visualizações. Além disso, cada pasta contém um arquivo README que descreve o projeto em detalhes, incluindo seu objetivo, metodologia e conclusões.
 
-Eu usei a linguagens de programação Python, bem como uma série de bibliotecas e ferramentas populares, como TensorFlow, Keras, Scikit-learn e Pandas.
+Eu usei a linguagens de programação Python, bem como uma série de bibliotecas e ferramentas populares, como TensorFlow, Keras, Scikit-learn.
 
 Como iniciante em ciência de dados, pretendo trabalhar com diversos tipos de dados, desde planilhas simples até conjuntos de dados complexos. Vou aprender a manipular e visualizar dados usando ferramentas como Pandas e Numpy, e também terei a oportunidade de trabalhar com algoritmos de aprendizado de máquina. Fiquem à vontade para explorar meus projetos, fazer perguntas e contribuir com suas próprias ideias e sugestões. Vamos aprender juntos!
 

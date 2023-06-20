@@ -6,7 +6,10 @@ virtual/
 env/
 venv/
 
+revisao/
+
 mlep26/
 *.log
 *.zip
 teste.py
+teste.ipynb

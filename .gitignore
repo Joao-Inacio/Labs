@@ -5,7 +5,7 @@ virtual/
 
 env/
 venv/
-
+TensorFlow/img
 revisao/
 data/
 

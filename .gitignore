@@ -9,6 +9,7 @@ TensorFlow/img
 revisao/
 data/
 
+.env
 mlep26/
 *.log
 *.zip

@@ -1,7 +1,7 @@
 import os
 
 import dotenv
-import pymysql
+import pymysql   # type: ignore
 
 dotenv.load_dotenv()
 
@@ -55,6 +55,16 @@ with connection:
             {"nome": "Rafael", "idade": 28},
         )
 
-        cursor.executemany(sql, data2)
+        cursor.executemany(sql, data2)  # type: ignore
         connection.commit()
+        print(sql)
+    with connection.cursor() as cursor:
+        sql = (
+            f"SELECT * FROM {TABLE_NAME} "
+        )
+
+        cursor.execute(sql)
+        dat = cursor.fetchall()
+        for row in dat:
+            print(row)
         print(sql)

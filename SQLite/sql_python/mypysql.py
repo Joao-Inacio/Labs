@@ -27,7 +27,6 @@ with connection:
         )
         cursor.execute(f'TRUNCATE TABLE {TABLE_NAME}')  # Limpa a tabela
         connection.commit()
-        print(cursor)
     with connection.cursor() as cursor:
         sql = (
             f"INSERT INTO {TABLE_NAME} "
@@ -41,7 +40,6 @@ with connection:
 
         cursor.execute(sql, data)
         connection.commit()
-        print(sql)
     with connection.cursor() as cursor:
         sql = (
             f"INSERT INTO {TABLE_NAME} "
@@ -57,7 +55,6 @@ with connection:
 
         cursor.executemany(sql, data2)  # type: ignore
         connection.commit()
-        print(sql)
     with connection.cursor() as cursor:
         sql = (
             f"SELECT * FROM {TABLE_NAME} "
@@ -67,4 +64,14 @@ with connection:
         dat = cursor.fetchall()
         for row in dat:
             print(row)
-        print(sql)
+    with connection.cursor() as cursor:
+        sql = (
+            f'DELETE FROM {TABLE_NAME} '
+            'WHERE id = %s'
+        )
+
+        cursor.execute(sql, (2,))
+        connection.commit()
+        cursor.execute(f'SELECT * FROM {TABLE_NAME}')
+        for row in cursor.fetchall():
+            print(row)

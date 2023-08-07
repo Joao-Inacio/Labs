@@ -75,3 +75,15 @@ with connection:
         cursor.execute(f'SELECT * FROM {TABLE_NAME}')
         for row in cursor.fetchall():
             print(row)
+    with connection.cursor() as cursor:
+        sql = (
+            f'UPDATE {TABLE_NAME} '
+            'SET nome = %s, idade = %s '
+            'WHERE id = %s'
+        )
+
+        cursor.execute(sql, ('Mateus', 90, 4))
+        connection.commit()
+        cursor.execute(f'SELECT * FROM {TABLE_NAME}')
+        for row in cursor.fetchall():
+            print(row)

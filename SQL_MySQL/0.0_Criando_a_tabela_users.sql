@@ -1,0 +1,11 @@
+-- Active: 1691416914754@@127.0.0.1@3306@base_de_dados
+CREATE TABLE users (
+    id INT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    first_name VARCHAR(150) NOT NULL,
+    last_name VARCHAR(150),
+    email VARCHAR(250) NOT NULL UNIQUE KEY,
+    password_hash VARCHAR(250) NOT NULL UNIQUE KEY
+);
+
+
+

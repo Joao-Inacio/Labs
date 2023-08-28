@@ -1,0 +1,10 @@
+-- Active: 1691416914754@@127.0.0.1@3306@base_de_dados
+CREATE TABLE profiles(
+    id INT UNSIGNED AUTO_INCREMENT NOT NULL,
+    bio TEXT NULL,
+    description TEXT NULL,
+    user_id INT UNSIGNED NULL,
+    CONSTRAINT profiles_PK PRIMARY KEY (id),
+    CONSTRAINT profiles_UN UNIQUE KEY (user_id),
+    CONSTRAINT profiles_FK FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE ON UPDATE CASCADE
+)

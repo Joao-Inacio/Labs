@@ -7,7 +7,7 @@ env/
 venv/
 TensorFlow/img
 revisao/
-data/
+
 
 .env
 mlep26/

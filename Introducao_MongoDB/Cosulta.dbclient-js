@@ -1,0 +1,7 @@
+-- Active: 1693920323533@@127.0.0.1@27017@dbmidias
+// Realizando consultas com vários resultados 
+db('dbmidias').collection('posts').find().toArray()
+
+// Realizando consultas com um resultado
+db('dbmidias').collection('posts').findOne()
+

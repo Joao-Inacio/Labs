@@ -1,0 +1,21 @@
+-- Active: 1693920323533@@127.0.0.1@27017@dbmidias
+
+db('dbmidias').collection('posts').insertOne(
+    {
+        nome:"José", postagem:"Bons Produtos!", data:"31-06-2019"
+    }
+)
+
+// Inserindo Varios
+db('dbmidias').collection('posts').insertMany([
+    {
+        nome : "Antonio", postagem: "Minha bike quebrou", data: "26-05-2019"
+    },
+    {
+        nome: "Maria Silva", postagem: "Encontrei tudo que procurava", data: "14-06-2019"
+    },
+    {
+        nome: "Lucas Andrade" , postagem: "Ótimo atendimento! ", data : "12-04-2019"
+    }
+])
+

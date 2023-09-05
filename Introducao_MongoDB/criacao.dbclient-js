@@ -1,0 +1,3 @@
+-- Active: 1693920323533@@127.0.0.1@27017@dbmidias
+// Criação do banco de dados
+db("dbmidias").createCollection("posts")

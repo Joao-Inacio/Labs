@@ -1,0 +1,17 @@
+Como primeiro exemplo, podemos usar o comando SET para armazenar o valor "fido" na chave
+"server:name":
+
+SET server:name "fido"
+
+O Redis armazenará nossos dados permanentemente, para que possamos perguntar mais tarde
+"Qual é o valor armazenado em key server:name?" e o Redis responderá com "fido":
+
+GET server:name => "fido"
+
+Existe um comando para testar se uma chave dada existe ou não:
+
+EXISTS server:name => 1
+EXISTS server:blabla => 0
+
+Dica: Você pode clicar nos comandos acima para executá-los automaticamente. O texto após a
+seta (=>) mostra a saída esperada.

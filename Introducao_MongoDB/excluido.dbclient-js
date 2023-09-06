@@ -1,0 +1,14 @@
+-- Active: 1693920323533@@127.0.0.1@27017@dbmidias
+
+// Deletando um documento
+db('dbmidias').collection('posts').deleteOne({nome: "José"});
+
+// Deletando Vários documento
+db('dbmidias').collection('posts').deleteMany({nome: "José"});
+
+// Deletando a a coleção inteira
+db('dbmidias').collection('posts').drop()
+
+// Deletando o banco de dados inteiro
+db('escola').dropDatabase()
+

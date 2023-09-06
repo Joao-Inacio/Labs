@@ -1,0 +1,8 @@
+-- Active: 1693920323533@@127.0.0.1@27017@dbmidias
+
+// Atualizando
+db('dbmidias').collection('posts').updateOne({nome:"José"}, {$set:{idade:29}})
+
+// Atualizando Vários
+db('dbmidias').collection('posts').updateMany({nome: "José"}, {$set: {idade: 28}});
+db('dbmidias').collection('posts').updateMany({nome: "Antonio"}, {$set: {idade: 12}});

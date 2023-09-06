@@ -1,3 +1,6 @@
--- Active: 1693920323533@@127.0.0.1@27017@dbmidias
+-- Active: 1693920323533@@127.0.0.1@27017
 // Criação do banco de dados
 db("dbmidias").createCollection("posts")
+
+// Criação da base de dados escola
+db("escola").createCollection("estudantes")

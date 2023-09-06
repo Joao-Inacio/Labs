@@ -5,3 +5,24 @@ db('dbmidias').collection('posts').find().toArray()
 // Realizando consultas com um resultado
 db('dbmidias').collection('posts').findOne()
 
+// Consultando um só valor
+db('dbmidias').collection('posts').find({nome:"José"}).toArray()
+
+// Consulta com filtro
+db('dbmidias').collection('posts').find({postagem:"Bons Produtos!",idade:{$lte: 25}}).toArray()
+
+// Usando o operador or
+db('dbmidias').collection('posts').find({$or:[{nome:"José"},{nome:"Antonio"}]}).toArray()
+
+// Usando operador in
+db('dbmidias').collection('posts').find({idade:{$in:[19,30]}}).toArray()
+
+// Cosulta com projesão 
+db('dbmidias').collection('posts').findOne({nome:"José"},{ObjectID: 0})
+
+// Usando o limite
+db('dbmidias').collection('posts').find().limit(2).toArray()
+
+// Ordenando 
+db('dbmidias').collection('posts').find().sort({nome: 1}).limit(2).toArray()
+

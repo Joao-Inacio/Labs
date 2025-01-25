@@ -8,6 +8,10 @@ env/
 venv/
 TensorFlow/img
 revisao/
+/data
+/data/
+/data/*
+data/
 
 # C extensions
 *.so

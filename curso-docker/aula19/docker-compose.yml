@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  meusite:
+    image: nginx:latest
+    container_name: site-cfbcursos
+    ports:
+      - "8080:80"
+    volumes:
+      - ./website:/usr/share/nginx/html/
+    depends_on:
+      - meubanco
+
+  meubanco:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: 123
+      MYSQL_DATABASE: cfbcursos
+    volumes:
+      - dados-mysql:/var/lib/mysql
+
+volumes:
+  dados-mysql:
